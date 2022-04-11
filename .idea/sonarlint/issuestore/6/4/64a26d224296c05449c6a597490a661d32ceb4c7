@@ -1,15 +1,6 @@
 
-O
-java:S1135
-"2Complete the task associated to this TODO comment.(Æÿ©ï8§òõƒ€0
-U	java:S106"9Replace this use of System.out or System.err by a logger.(§ü§Ş8­òõƒ€0
-O
-java:S1135"2Complete the task associated to this TODO comment.(§ü§Ş8²òõƒ€0
-C	java:S131""Add a default case to this switch.( úÓŠıÿÿÿÿ8µòõƒ€0
-Z	java:S106'"9Replace this use of System.out or System.err by a logger.(˜Š¿Ûüÿÿÿÿ8½òõƒ€0
-Z	java:S1067"9Replace this use of System.out or System.err by a logger.(˜Š¿Ûüÿÿÿÿ8Äòõƒ€0
-Z	java:S106:"9Replace this use of System.out or System.err by a logger.(±ÒùÄøÿÿÿÿ8Çòõƒ€0
-U	java:S106="9Replace this use of System.out or System.err by a logger.(›Ğ˜ş8Ëòõƒ€0
-O
-java:S1135="2Complete the task associated to this TODO comment.(›Ğ˜ş8Íòõƒ€0
-U	java:S106T"9Replace this use of System.out or System.err by a logger.(÷¤ŠÖ8Öòõƒ€0
+C	java:S131""Add a default case to this switch.( úÓŠıÿÿÿÿ8µòõƒ€0
+Z	java:S106)"9Replace this use of System.out or System.err by a logger.(˜Š¿Ûüÿÿÿÿ8½òõƒ€0
+Z	java:S1069"9Replace this use of System.out or System.err by a logger.(˜Š¿Ûüÿÿÿÿ8Äòõƒ€0
+Z	java:S106<"9Replace this use of System.out or System.err by a logger.(±ÒùÄøÿÿÿÿ8Çòõƒ€0
+U	java:S106V"9Replace this use of System.out or System.err by a logger.(÷¤ŠÖ8Öòõƒ€0

@@ -1,6 +1,6 @@
 package com.kreitek.editor.commands;
 
-import com.kreitek.editor.Command;
+import com.kreitek.editor.interfaces.Command;
 
 import java.util.ArrayList;
 

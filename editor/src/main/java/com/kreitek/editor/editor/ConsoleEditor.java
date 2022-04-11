@@ -1,6 +1,10 @@
-package com.kreitek.editor;
+package com.kreitek.editor.editor;
 
+import com.kreitek.editor.exceptions.BadCommandException;
+import com.kreitek.editor.interfaces.Command;
+import com.kreitek.editor.exceptions.ExitException;
 import com.kreitek.editor.commands.CommandFactory;
+import com.kreitek.editor.interfaces.Editor;
 
 import java.util.ArrayList;
 import java.util.Scanner;

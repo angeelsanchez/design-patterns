@@ -1,6 +1,6 @@
 package com.kreitek.editor.commands;
 
-import com.kreitek.editor.BadCommandException;
+import com.kreitek.editor.exceptions.BadCommandException;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

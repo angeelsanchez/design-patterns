@@ -1,4 +1,4 @@
-package com.kreitek.editor;
+package com.kreitek.editor.exceptions;
 
 public class BadCommandException extends Throwable {
 
