@@ -6,7 +6,7 @@ import java.util.List;
 public class MementoEditor {
     private final List<String> state;
 
-    public MementoEditor(ArrayList<String> state) {
+    public MementoEditor(List<String> state) {
         this.state = new ArrayList<>(state);
     }
 

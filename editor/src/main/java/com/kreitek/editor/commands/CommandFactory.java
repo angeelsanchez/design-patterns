@@ -19,8 +19,7 @@ public class CommandFactory {
     }
 
     private Command createUndoCommand() {
-        // TODO create undo command
-        return null;
+        return new UndoCommand();
     }
 
     private Command createDeleteCommand(String lineNumber) {

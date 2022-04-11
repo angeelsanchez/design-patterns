@@ -65,9 +65,10 @@ public class ConsoleEditor implements Editor {
     }
 
     private void showHelp() {
-        printLnToConsole("To add new line -> a \"your text\"");
-        printLnToConsole("To update line  -> u [line number] \"your text\"");
-        printLnToConsole("To delete line  -> d [line number]");
+        printLnToConsole("To add new line          -> a \"your text\"");
+        printLnToConsole("To update line           -> u [line number] \"your text\"");
+        printLnToConsole("To delete line           -> d [line number]");
+        printLnToConsole("To undo the last command -> undo");
     }
 
     private void printErrorToConsole(String message) {
