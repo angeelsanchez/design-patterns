@@ -9,7 +9,7 @@ import com.kreitek.editor.interfaces.Editor;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ConsoleEditor implements Editor {
+public abstract class ConsoleEditor implements Editor {
     public static final String TEXT_RESET = "\u001B[0m";
     public static final String TEXT_BLACK = "\u001B[30m";
     public static final String TEXT_RED = "\u001B[31m";
@@ -21,7 +21,7 @@ public class ConsoleEditor implements Editor {
     public static final String TEXT_WHITE = "\u001B[37m";
 
     private final CommandFactory commandFactory = new CommandFactory();
-    private ArrayList<String> documentLines = new ArrayList<String>();
+    protected ArrayList<String> documentLines = new ArrayList<String>();
 
     @Override
     public void run() {
@@ -39,31 +39,16 @@ public class ConsoleEditor implements Editor {
                 printErrorToConsole("There is nothing more to undo");
             }
 
-            showDocumentLines(documentLines);
+            showDocumentLines();
             showHelp();
         }
     }
 
-    private void showDocumentLines(ArrayList<String> textLines) {
-        if (textLines.size() > 0){
-            setTextColor(TEXT_YELLOW);
-            printLnToConsole("START DOCUMENT ==>");
-            for (int index = 0; index < textLines.size(); index++) {
-                StringBuilder stringBuilder = new StringBuilder();
-                stringBuilder.append("[");
-                stringBuilder.append(index);
-                stringBuilder.append("] ");
-                stringBuilder.append(textLines.get(index));
-                printLnToConsole(stringBuilder.toString());
-            }
-            printLnToConsole("<== END DOCUMENT");
-            setTextColor(TEXT_RESET);
-        }
-    }
+    abstract void showDocumentLines();
 
     private String waitForNewCommand() {
         printToConsole("Enter a command : ");
-        Scanner scanner = new Scanner(System. in);
+        Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
     }
 
@@ -80,11 +65,11 @@ public class ConsoleEditor implements Editor {
         setTextColor(TEXT_RESET);
     }
 
-    private void setTextColor(String color) {
+    protected void setTextColor(String color) {
         System.out.println(color);
     }
 
-    private void printLnToConsole(String message) {
+    protected void printLnToConsole(String message) {
         System.out.println(message);
     }
 
