@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class UndoCommand implements Command {
 
     @Override
-    public void execute(ArrayList<String> documentLines) {
+    public void execute(ArrayList<String> documentLines) throws NullPointerException {
         CaretakerEditor caretaker = CaretakerEditor.getInstance();
         documentLines.clear();
         documentLines.addAll(caretaker.pop().getState());

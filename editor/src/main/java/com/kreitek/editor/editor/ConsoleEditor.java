@@ -35,7 +35,10 @@ public class ConsoleEditor implements Editor {
                 printErrorToConsole("Bad command");
             } catch (ExitException e) {
                 exit = true;
+            } catch (NullPointerException e) {
+                printErrorToConsole("There is nothing more to undo");
             }
+
             showDocumentLines(documentLines);
             showHelp();
         }
